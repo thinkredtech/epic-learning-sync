@@ -47,7 +47,7 @@ add_action( 'admin_menu', function() {
                 <?php wp_nonce_field( 'epic_sync_settings_save', 'epic_sync_nonce' ); ?>
                 <table class="form-table">
                     <tr><th>API Application ID</th><td><input type="text" name="epic_sync_id" value="<?php echo esc_attr( $credentials['id'] ); ?>" /></td></tr>
-                    <tr><th>API Key</th><td><input type="text" name="epic_sync_key" value="<?php echo esc_attr( $credentials['key'] ); ?>" /></td></tr>
+                    <tr><th>API Key</th><td><input type="password" name="epic_sync_key" value="<?php echo esc_attr( $credentials['key'] ); ?>" /></td></tr>
                 </table>
                 <button type="submit" name="epic_sync_save" class="button button-primary">Save Settings</button>
             </form>
