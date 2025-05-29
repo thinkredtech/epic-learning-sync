@@ -1,0 +1,238 @@
+# Copyright (C) 2025 ThinkRED Technologies
+# This file is distributed under the GPL-3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Epic Learning Sync for LearnPress 2.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/epic-learning-sync\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-05-29T13:10:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: epic-learning-sync\n"
+
+#. Plugin Name of the plugin
+msgid "Epic Learning Sync for LearnPress"
+msgstr ""
+
+#. Description of the plugin
+msgid "Synchronizes LearnPress courses with Epic Learning API data and provides tools to delete all courses."
+msgstr ""
+
+#. Author of the plugin
+msgid "ThinkRED Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://thinkred.tech"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:24
+msgid "API Settings"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:25
+msgid "Configure your Epic Learning API credentials."
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:33
+msgid "API Application ID"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:41
+msgid "Enter your Epic Learning API Application ID."
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:47
+msgid "API Key"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:55
+msgid "Enter your Epic Learning API Key."
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:64
+msgid "Save Settings"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:73
+msgid "Course Sync"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:74
+msgid "Synchronize LearnPress courses with Epic Learning Network."
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:79
+#: admin/partials/epic-learning-sync-admin-display.php:108
+msgid "Status:"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:80
+#: admin/partials/epic-learning-sync-admin-display.php:109
+msgid "Idle"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:95
+msgid "Start Sync"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:98
+#: admin/partials/epic-learning-sync-admin-display.php:127
+msgid "Cancel"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:102
+msgid "Course Deletion"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:103
+msgid "Delete all LearnPress courses."
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:124
+msgid "Delete All Courses"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:131
+msgid "Backup Management"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:132
+msgid "Restore courses from a previous backup."
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:136
+msgid "Available Backups"
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:138
+msgid "Loading backups..."
+msgstr ""
+
+#: admin/partials/epic-learning-sync-admin-display.php:144
+msgid "Refresh Backups"
+msgstr ""
+
+#: includes/class-epic-learning-sync-admin.php:54
+msgid "Epic Learning Sync Settings"
+msgstr ""
+
+#: includes/class-epic-learning-sync-admin.php:55
+msgid "Epic Learning Sync"
+msgstr ""
+
+#: includes/class-epic-learning-sync-admin.php:102
+msgid "Are you sure you want to delete all courses? This action cannot be undone."
+msgstr ""
+
+#: includes/class-epic-learning-sync-admin.php:103
+msgid "Are you sure you want to sync all courses? This may take a while."
+msgstr ""
+
+#: includes/class-epic-learning-sync-admin.php:127
+msgid "Settings saved successfully."
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:56
+msgid "Security check failed."
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:61
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:83
+msgid "Temporary directory is not writable."
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:89
+msgid "API credentials not configured."
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:98
+msgid "Failed to fetch API data: "
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:113
+msgid "Data fetched successfully."
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:156
+msgid "Unexpected API response status: %d"
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:166
+msgid "Invalid JSON received from API."
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:174
+msgid "Invalid data structure received from API."
+msgstr ""
+
+#: includes/class-epic-learning-sync-api.php:183
+msgid "Failed to write data to the temporary file."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:56
+msgid "Security check failed."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:61
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:77
+msgid "Temporary file not found."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:85
+msgid "Malformed JSON in temporary file."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:121
+msgid "Sync complete!"
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:121
+msgid "Syncing..."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:171
+msgid "Untitled Course"
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:348
+msgid "Security check failed."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:353
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:384
+msgid "Deletion complete!"
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:412
+msgid "Deletion complete!"
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:412
+msgid "Deleting..."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:447
+msgid "Backup file not found."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:456
+msgid "Invalid backup file format."
+msgstr ""
+
+#: includes/class-epic-learning-sync-course-handler.php:487
+msgid "Restore completed. Restored: %d, Failed: %d"
+msgstr ""

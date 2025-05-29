@@ -1,0 +1,158 @@
+/* Epic Learning Sync Admin Styles */
+
+.epic-learning-sync-admin {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.epic-sync-admin-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .epic-sync-admin-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .epic-sync-settings-section {
+        grid-column: 1 / -1;
+    }
+}
+
+.epic-sync-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.epic-sync-section h2 {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.epic-sync-status-container {
+    margin-bottom: 20px;
+}
+
+.epic-sync-status {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.epic-sync-status-value {
+    font-weight: normal;
+}
+
+.epic-sync-progress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.epic-sync-progress-bar {
+    width: 100%;
+    background: #f0f0f1;
+    height: 24px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.epic-sync-progress-bar-fill {
+    width: 0;
+    background: #2271b1;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.epic-sync-progress-bar-delete {
+    background: #f8f8f8;
+}
+
+.epic-sync-progress-bar-fill-delete {
+    background: #d63638;
+}
+
+.epic-sync-progress-text {
+    min-width: 50px;
+    text-align: right;
+}
+
+.epic-sync-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.epic-sync-button {
+    min-width: 120px;
+}
+
+.epic-sync-button-delete {
+    background: #d63638;
+    border-color: #d63638;
+}
+
+.epic-sync-button-delete:hover {
+    background: #b32d2e;
+    border-color: #b32d2e;
+}
+
+.epic-sync-backup-list {
+    margin-bottom: 20px;
+}
+
+.epic-sync-backup-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.epic-sync-backup-item:hover {
+    background: #f9f9f9;
+}
+
+.epic-sync-backup-info {
+    flex-grow: 1;
+}
+
+.epic-sync-backup-type {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.epic-sync-backup-type-sync {
+    background: #e7f5fa;
+    color: #0071a1;
+}
+
+.epic-sync-backup-type-delete {
+    background: #fbeaea;
+    color: #b32d2e;
+}
+
+.epic-sync-backup-date {
+    color: #646970;
+    font-size: 12px;
+}
+
+.epic-sync-backup-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.epic-sync-loading {
+    color: #646970;
+    font-style: italic;
+}
