@@ -1,14 +1,14 @@
 /* Epic Learning Sync Admin Styles */
 
 .epic-learning-sync-admin {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 20px auto;
 }
 
 .epic-sync-admin-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 @media (min-width: 768px) {
@@ -17,7 +17,7 @@
     }
     
     .epic-sync-settings-section {
-        grid-column: 1 / -1;
+        grid-column: 1 / -1; /* Span across both columns */
     }
 }
 
@@ -25,14 +25,39 @@
     background: #fff;
     border: 1px solid #ccd0d4;
     border-radius: 4px;
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 }
 
 .epic-sync-section h2 {
     margin-top: 0;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #eee;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.epic-sync-section p {
+    color: #50575e;
+    margin-bottom: 20px;
+}
+
+/* Settings Form */
+.epic-sync-settings-section .form-table th {
+    width: 180px;
+}
+
+.epic-sync-settings-section .form-table td input[type="text"],
+.epic-sync-settings-section .form-table td input[type="password"] {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Operations Sections (Sync, Delete, Backup) */
+.epic-sync-operation-section,
+.epic-sync-backup-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .epic-sync-status-container {
@@ -42,25 +67,32 @@
 .epic-sync-status {
     font-weight: 600;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .epic-sync-status-value {
     font-weight: normal;
+    background-color: #f0f0f1;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
 }
 
 .epic-sync-progress {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .epic-sync-progress-bar {
-    width: 100%;
-    background: #f0f0f1;
-    height: 24px;
-    border-radius: 4px;
-    overflow: hidden;
     flex-grow: 1;
+    background: #f0f0f1;
+    height: 12px; /* Slimmer progress bar */
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 .epic-sync-progress-bar-fill {
@@ -68,6 +100,7 @@
     background: #2271b1;
     height: 100%;
     transition: width 0.3s ease;
+    border-radius: 6px;
 }
 
 .epic-sync-progress-bar-delete {
@@ -81,11 +114,14 @@
 .epic-sync-progress-text {
     min-width: 50px;
     text-align: right;
+    font-weight: 600;
+    color: #50575e;
 }
 
 .epic-sync-actions {
     display: flex;
     gap: 10px;
+    margin-top: auto; /* Push buttons to the bottom */
 }
 
 .epic-sync-button {
@@ -95,15 +131,27 @@
 .epic-sync-button-delete {
     background: #d63638;
     border-color: #d63638;
+    color: #fff;
 }
 
-.epic-sync-button-delete:hover {
+.epic-sync-button-delete:hover,
+.epic-sync-button-delete:focus {
     background: #b32d2e;
     border-color: #b32d2e;
+    color: #fff;
 }
 
+/* Backup Management */
 .epic-sync-backup-list {
     margin-bottom: 20px;
+}
+
+#backup-list-container {
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    padding: 10px;
+    background: #fdfdfd;
 }
 
 .epic-sync-backup-item {
@@ -111,13 +159,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border: 1px solid #eee;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
 }
 
-.epic-sync-backup-item:hover {
-    background: #f9f9f9;
+.epic-sync-backup-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .epic-sync-backup-info {
@@ -128,8 +176,10 @@
     display: inline-block;
     padding: 2px 8px;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: 600;
     margin-right: 10px;
+    text-transform: uppercase;
 }
 
 .epic-sync-backup-type-sync {
@@ -152,7 +202,20 @@
     gap: 5px;
 }
 
-.epic-sync-loading {
+.epic-sync-loading,
+.epic-sync-error {
     color: #646970;
     font-style: italic;
+    padding: 15px;
+    text-align: center;
+}
+
+.epic-sync-error {
+    color: #d63638;
+    font-weight: 600;
+}
+
+/* Add some spacing */
+.wrap > h1 {
+    margin-bottom: 20px;
 }

@@ -65,6 +65,28 @@ class Epic_Learning_Sync_Admin
         $this->plugin_name = $plugin_name;
         $this->version = $version;
         $this->plugin_url = $plugin_url;
+
+        // Add settings link to plugin actions
+        add_filter("plugin_action_links_" . EPIC_LEARNING_SYNC_BASENAME, array($this, "add_settings_link"));
+    }
+
+    /**
+     * Add settings link to plugin actions.
+     *
+     * @since    2.1.0
+     * @param    array    $links    The existing plugin action links.
+     * @return   array    The modified plugin action links.
+     */
+    public function add_settings_link($links)
+    {
+        $settings_link = 
+            sprintf(
+                '<a href="%s">%s</a>',
+                esc_url(admin_url("options-general.php?page=epic-sync-settings")),
+                esc_html__("Settings", "epic-learning-sync")
+            );
+        array_unshift($links, $settings_link);
+        return $links;
     }
 
     /**

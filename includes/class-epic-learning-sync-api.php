@@ -109,7 +109,7 @@ class Epic_Learning_Sync_API
         }
 
         // Fetch the API response with proper error handling
-        $response = $this->make_api_request('courseexportv2.json', $credentials);
+        $response = $this->make_api_request("courseexport.json", $credentials);
 
         if (is_wp_error($response)) {
             $error_message = $response->get_error_message();
